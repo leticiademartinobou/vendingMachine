@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina Expendedora</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+<div class ="vending-machine">
+    <div class="general">
+        <div class="products">
+            <div class="shelf" id="shelf1">
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-1"><p class="product-number">11</p><div class ="ball" id="ball-11"></div><p class = "price">1.25€</p></div>
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-2"><p class="product-number">12</p><div class ="ball" id="ball-12"></div><p class = "price">1.00€</p></div>
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-3"><p class="product-number">13</p><div class ="ball" id="ball-13"></div><p class = "price">1.50€</p></div>
+            </div>
+            <div class="shelf" id="shelf2">
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-4"><p class="product-number">14</p><div class ="ball" id="ball-14"></div><p class = "price">1.00€</p></div>
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-5"><p class="product-number">15</p><div class ="ball" id="ball-15"></div><p class = "price">1.25€</p></div>
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-6"><p class="product-number">16</p><div class ="ball" id="ball-16"></div><p class = "price">2.00€</p></div>
+            </div>
+            <div class="shelf" id="shelf3">
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-7"><p class="product-number">17</p><div class ="ball" id="ball-17"></div><p class = "price">2.50€</p></div>
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-8"><p class="product-number">18</p><div class ="ball" id="ball-18"></div><p class = "price">1.25€</p></div>
+                <div class="product"><img class="product-pic" src="./cocacola.JPG" id="product-9"><p class="product-number">19</p><div class ="ball" id="ball-19"></div><p class = "price">1.00€</p></div>
+            </div>
+
+        </div>
+        <div class="right-screen">
+            <div class="select-screen">
+                <div class="screen-numbers">
+                    <!-- <input type="button" class="screen"></div> -->
+                    <div class="screen">.</div>
+                    <div class="number-buttons">
+                        <div class="button-row" id="row1">
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button7"><p class="written-number">7</p></div>
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button8"><p class="written-number">8</p></div>
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button9"><p class="written-number">9</p></div>
+                        </div>
+                        <div class="button-row" id="row2">
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button4"><p class="written-number">4</p></div>
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button5"><p class="written-number">5</p></div>
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button6"><p class="written-number">6</p></div>
+                        </div>
+                        <div class="button-row" id="row3">
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button1"><p class="written-number">1</p></div>
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button2"><p class="written-number">2</p></div>
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button3"><p class="written-number">3</p></div>
+                        </div>
+                        <div class="button-row" id="row4">
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button-"><p class="written-number">-</p></div>
+                            <div onclick="writeNumberOnScreen(event)" class="button" id="button0"><p class="written-number">0</p></div>
+                            <div onclick="deleteNumberOnScreen()" class="button" id="buttonC"><p class="written-number">C</p></div>
+                        </div>
+                    </div>
+                    <!-- <div onclick="selectButton()" class="select-button"><button class="select" data-value="select">Seleccionar</button></div> -->
+                    <div  class="select-button"><button class="select" data-value="select">Seleccionar</button></div>
+                    </div>
+                <div class="money-hatch">
+                    <!-- <p class="cash-text">Insert Cash</p> -->
+                    <div class = cash-buttons>
+                        <div onclick = "writeCashNumberOnScreen(event)" class="cash-button" id="cash-button-2"><p class="cash-amount">2.0</p></div>
+                        <div onclick = "writeCashNumberOnScreen(event)" class="cash-button" id="cash-button-1"><p class="cash-amount">1.0</p></div>
+                        <div onclick = "writeCashNumberOnScreen(event)" class="cash-button" id="cash-button-0.50"><p class="cash-amount">0.5</p></div>
+                    </div>
+                    <div class = cash-buttons>
+                        <div onclick = "writeCashNumberOnScreen(event)" class="cash-button" id="cash-button-0.20"><p class="cash-amount">0.2</p></div>
+                        <div onclick = "writeCashNumberOnScreen(event)" class="cash-button" id="cash-button-0.10"><p class="cash-amount">0.1</p></div>
+                        <div onclick = "writeCashNumberOnScreen(event)" class="cash-button" id="cash-button-0.0.5"><p class="cash-amount">0.05</p></div>
+                    </div>
+                    <div class = cash-buttons>
+                        <div onclick = "deleteCashOnScreen()" class="cash-button" id="cash-back"><p class="cash-amount">Return cash</p></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="machine-hatch">
+        <div class="hatch">
+            <img class="product-pic-in-hatch inactive" src="./cocacola.JPG"> 
+            <p id="hatch-text">Trampilla para recoger el producto</p>
+        </div>
+    </div>    
+</div>
+
+    
+</body>
+</html>
+

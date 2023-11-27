@@ -1,0 +1,304 @@
+body {
+    background: linear-gradient(to right,rgb(131, 134, 136), rgb(18, 130, 145));
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.vending-machine{
+    background-color: rgb(66, 73, 83);
+    border-radius: 10px;
+    flex-direction: column;
+    height: 43em;
+    margin: auto; /* This div will be horizontally centered because it has margin: auto;  */
+    padding: 1.5em;
+    width: 35em;
+}
+
+.general {
+    display: flex;
+}
+
+::placeholder {
+    text-align: center; 
+ }
+
+.products {
+    background-color: grey;
+    border: solid;
+    border-color: black;
+    border-width: 0.1px;
+    flex-direction: column;
+    height: 500px;
+}
+
+.shelf {
+    display: flex;
+    margin-left: 10px;
+    /* margin-right: none; */
+    width: 324px;
+}
+
+.product {
+    background-color: rgb(176, 176, 201);
+    border: solid;
+    border-radius: 5px;
+    border-width: 0.5px;
+    height: 150px;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: center;
+    width: 27.2%;
+}
+
+.product-pic {
+    height: 25px;
+    margin-top: 10%;
+    width: 25px;
+}
+
+/* .hatch-text{
+    font-size: auto; 
+}  */
+
+.product-pic-in-hatch {
+    height: 25px;
+    width: 25px;
+}
+
+.ball {
+    background-color: rgb(27, 194, 27);
+    border-radius: 20px ;
+    border: solid;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 35%;
+
+}
+
+.right-screen {
+    background-color: grey;
+    border-top: solid;
+    border-right: solid;
+    border-width: 0.5px;
+    flex-direction: row;
+    height: 500px; 
+}
+
+/* .screen-numbers {
+    background-color: rgb(176,205,176);
+    font-size: 30px;
+    text-align: end;
+    padding: 4px;
+    width: 100px;
+
+} */
+
+.screen {
+    background-color: rgb(134, 134, 158);
+    border-radius: 2px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 0.5px;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 140px;
+    /* font-size: auto; así entra todo el texto */
+    text-align: end;
+    padding: 4px;
+}
+
+.number-buttons {
+    cursor: pointer;
+    flex-direction: column;
+    margin-left: 10px;
+    /* margin-right: none; */
+ } 
+
+ .money-hatch {
+    cursor: pointer;
+    flex-direction: column;
+    /* margin-left: none; */
+    margin-right: 3px;
+ }
+
+.button-row {
+    border-width: 0.5px;
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.button {
+    align-items: center;
+    background-color: white;
+    border: solid;
+    border-radius: 10px;
+    border-width: 0.5px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    width: 40px;
+}
+
+.button:hover {
+    background-color: rgb(134, 134, 158);
+  }
+
+.button:active {
+    background-color: rgb(196, 219, 162);
+}  
+
+.cash-buttons {
+    border-width: 0.5px;
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+#cash-back {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#buttonC {
+    font-weight: bold;
+}
+
+.cash-button {
+    align-items: center;
+    background-color: white;
+    border: solid;
+    border-radius: 10px;
+    border-width: 0.5px;
+    display: flex;
+    font-size: 15px;
+    height: 30px;
+    justify-content: center;
+    /* margin-left: 2px; */
+    margin-right: 2px;
+    text-align: center;
+    width: 60px;
+}
+
+.cash-amount {
+    font-size: 12px;
+    padding: 3px;
+}
+
+.cash-button:hover {
+    background-color: rgb(134, 134, 158);
+  }
+
+.cash-button:active {
+    background-color: rgb(206, 129, 133);
+}  
+
+.money-hatch{
+    align-items: center;
+    /* background-color: rgb(185, 214, 205); */
+    background-color: rgb(134, 134, 158);
+    border: solid;
+    /* border-color: rgb(151, 190, 177); */
+    border-color: rgb(91, 91, 116);
+    border-radius: 5px;
+    border-width: 15px;
+    height: 110px;
+    justify-content: center;
+    margin-left: 4%;
+    margin-top: 10px;
+    padding: 10px;
+    /* text-align: none; */
+    width: 100px;
+}
+
+.cash-text {
+    font-weight: bold;
+    vertical-align: text-top;
+}
+
+.screen {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.select-screen {
+    background-color:rgb(176, 176, 201);
+    border: solid;
+    border-width: 0.5px;
+    flex-direction: column;
+    height: 460px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.select {
+    cursor: pointer;
+    height: 50px;
+    width: 160px;
+}
+
+.machine-hatch {
+    align-items: center;
+    background-color: grey;
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    border-color: black;
+    border-width: 0.5px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    width: 536px;   
+}
+
+.inactive {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.active {
+    /* display: none; */
+    visibility: visible;
+}
+
+.hatch {
+    background-color: rgb(176, 176, 201);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    height: 70px;
+    width: 400px;
+
+}
+
+.price {
+    color: #4d4c4c;
+    font-size: 90%;
+    font-weight: bold;
+
+}
+
+.green {
+    color: rgb(27, 194, 27);
+  }
+
+.grey {
+    color: grey;
+  }
+
+  
